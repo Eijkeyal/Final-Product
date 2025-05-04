@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Your Store</title>
+     <style>
+        /* Navigation Styles */
+        .navlink {
+            font-family: Arial, sans-serif; 
+            background: #f0f0f0; 
+            padding: 1rem; /* Padding for spacing */
+            border-radius: 5px; /* Rounded corners */
+            margin: 1rem 0; /* Margin for spacing between navigation */
+        }
+        
+        .navlink ul {
+            list-style: none; /* Removes bullet points */
+            margin: 0; 
+            padding: 0; 
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: center;
+            gap: 1rem; /* Adds spacing between the items */
+        }
+        
+        .navlink a {
+            text-decoration: none; /* Removes underline from links */
+            color: #333; 
+            font-weight: normal;
+            padding: 0.5rem 1rem; /* Padding for clickable area */
+            border-radius: 4px; 
+        }
+        
+        .navlink a:hover {
+            background: #ddd;
+            color: #000; 
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .navlink ul {
+                flex-direction: column; /* Stacks items vertically on mobile */
+                align-items: center; /* Centers items vertically */
+            }
+        }
+    
+        /* Minimal Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; } 
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; } 
+        
+        /* Blog Section Container */
+        .blog-section {
+            max-width: 1200px; 
+            margin: 40px auto;
+            padding: 20px; 
+        }
+        
+        .section-title {
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 28px; 
+            color: #333; 
+        }
+        
+        /* Blog Grid */
+        .blog-grid {
+            display: grid; /* Grid layout */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible columns */
+            gap: 20px; /* Space between cards */
+        }
+        
+        .blog-card {
+            border: 1px solid #ddd;
+            border-radius: 5px; 
+            overflow: hidden; /* Prevents content from overflowing */
+        }
+        
+        .blog-card:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Adds shadow on hover */
+        }
+        
+        .blog-image {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; /* Crops and fills the area of the image */
+        }
+        
+        .blog-content {
+            padding: 15px; 
+        }
+        
+        .blog-date {
+            color: #888; 
+            font-size: 14px; 
+            margin-bottom: 8px; 
+        }
+        
+        .blog-title {
+            font-size: 18px;
+            margin-bottom: 10px; 
+        }
+        
+        .blog-excerpt {  /* This is the blog excerpt. It provides a brief preview of the blog post content to encourage users to read the full article.*/
+            color: #666; 
+            font-size: 15px;
+            margin-bottom: 15px; 
+        }
+        
+        .read-more {
+            color: #0066cc; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        
+
+      .view-all {
+    display: inline-block; /* Inline block for better button appearance */
+    margin: 20px auto; /* Centers the button and reduces vertical spacing */
+    padding: 8px 20px; /* Adjusts padding for a compact button */
+    background: #0066cc; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 4px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+    </style> 
+</head>
+<header>
+    <nav class="navlink">
+        <ul>
+            <li><a href="../Home/homepage.html">Home</a></li>
+            <li><a href="../Blog/blog3.html">Blog</a></li>
+            <li><a href="../About_us/about_us.html">About us</a></li>
+            <li><a href="../Research/final_research.html.html">Research Section</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h2 class="section-title">Latest From Our Blog</h2>
+        
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <div class="blog-card">
+                <img src="../Assets/Images/Blog Images/nike shoes for 1.jpg" alt="Blog Post" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-date">June 15, 2024</p>
+                    <h3 class="blog-title">Summer Footwear Trends 2024</h3>
+                    <p class="blog-excerpt">At the heart of the footwear industry, we pride ourselves on offering the perfect...</p>
+                    <a href="../Blog/Sub_blog/sub_blog1.html" class="read-more">Read More →</a>
+                </div>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="blog-card">
+                 <img src="../Assets/Images/Blog Images/sucess winner.jpg" alt="Blog Post" class="blog-image"> 
+                <div class="blog-content">
+                    <p class="blog-date">June 8, 2024</p>
+                    <h3 class="blog-title">Success Story</h3>
+                    <p class="blog-excerpt">Success Story A Winning Story with company name ...</p>
+                    <a href="../Blog/Sub_blog/sub_blog2.html" class="read-more">Read More →</a>
+                </div>
+            </div>
+            
+            <!-- Blog Post 3 -->
+            <div class="blog-card">
+                <img src="../Assets/Images/Blog Images/shoes 3.avif" alt="Blog Post" class="blog-image"> 
+                <div class="blog-content">
+                    <p class="blog-date">June 1, 2024</p>
+                    <h3 class="blog-title">How We Started</h3>
+                    <p class="blog-excerpt">It was not only the project or the idea to make the profit in the market, it was the ambition...</p>
+                    <a href="../Blog/Sub_blog/sub_blog3.html" class="read-more">Read More →</a>
+            
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Footer -->
+    <footer style="position: absolute; width: 100%; bottom: 0; text-align: center;">
+        <a href="view_articles" class="view-all">View All Articles</a>
+    </footer>
+</body>
+</html>

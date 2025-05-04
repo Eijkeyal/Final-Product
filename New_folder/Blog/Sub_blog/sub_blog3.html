@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | How we started</title>
+    <style>
+         /* Navigation Styles */
+         .navlink {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+        }
+        
+        .navlink ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .navlink a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .navlink a:hover {
+            background: #e9ecef;
+            color: #000;
+            transform: translateY(-2px);
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .navlink ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+        }
+    
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Blog Section Container */
+.sub-blog-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.sub-section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2a2a2a;
+    position: relative;
+}
+
+.sub-section-title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4361ee, #3a0ca3);
+    margin: 10px auto;
+    display: block;
+    border-radius: 2px;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.blog-card:hover .blog-image {
+    transform: scale(1.05);
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-date {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.blog-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.blog-excerpt {
+    font-size: 0.95rem;
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #4361ee;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.read-more:hover {
+    color: #3a0ca3;
+}
+
+.read-more::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #4361ee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.read-more:hover::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sub-section-title {
+        font-size: 2rem;
+    }
+
+    .blog-grid {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-section-title {
+        font-size: 1.8rem;
+    }
+
+    .blog-title {
+        font-size: 1.2rem;
+    }
+    /* Footer Styles */
+    
+    /* Footer Styles */
+    .footer {
+        background-color: #333; /* Dark background */
+        color: #fff; /* Light text color */
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 0.9rem;
+    }
+
+    .footer a {
+        color: #4361ee; /* Link color */
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+        color: #3a0ca3; /* Hover link color */
+    }
+
+    .footer .social-icons {
+        margin: 10px 0;
+    }
+
+    .footer .social-icons a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        background-color: #555;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .footer .social-icons a:hover {
+        background-color: #4361ee;
+    }
+}
+</style>
+     <div class="blog-card">
+        <img src="../../Assets/Images/Blog Images/shoes 3.avif"height=50px width=40px alt="Sneaker Care" class="blog-image">
+        <div class="blog-content">
+            <p class="blog-date">April 18, 2025</p>
+            <h1 class="blog-title">How we started</h1>
+            <p class="blog-excerpt">It was not only the project or the idea to make the profit in the market, it was the ambition and passion to provide the best services to the customers in today's world.
+                we aimed to establish the easiest way to connect customers and producers for the production and distribution of the best footwears. we listened to both the parties and gave the best 
+                platform and services. we dreamed it and did it, so we are here today.
+                When we started our journey in e-commerce with a focus on footwear, it wasn't just a project or an idea to profit in the market; it was a deep-rooted ambition and passion to provide the best services to our customers in today's competitive world.We envisioned creating a seamless bridge between customers and producers, ensuring the production and distribution of top-quality footwear that caters to all preferences and needs. Our mission was simple yet impactful: to revolutionize how people shop for and experience footwear, making the process hassle-free and highly satisfying.We prioritized listening to both customers and producers to understand their pain points, aspirations, and expectations. This feedback became the foundation upon which we built our platform—a platform that not only connects but also empowers both parties to achieve their goals.Our journey wasn’t without challenges. From understanding market trends to incorporating cutting-edge technologies, we invested time, effort, and resources to bring this dream to life. We constantly adapted and innovated to ensure our platform remained relevant, efficient, and user-friendly.Today, we stand as a testament to what ambition, dedication, and collaboration can achieve. Our story is one of perseverance, passion, and an unwavering commitment to excellence. We dreamed it, we worked for it, and we are here today—stronger and more determined than ever to continue serving our customers with unmatched quality and service
+            </p>
+           </div>
+        </div>
+</div>
+  </section>
+  <footer style="position: fixed; bottom: 0; width: 100%; background: #f0f0f0; text-align: center; padding: 1rem;">
+    <nav>
+        <a href="../../Home/homepage.html" style="text-decoration: none; color: #333; padding: 0.5rem 1rem; background: #ddd; border-radius: 4px;">
+            Back To Home
+        </a>
+    </nav>
+</footer>
+</body>
+</html>

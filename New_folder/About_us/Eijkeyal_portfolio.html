@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /*Basic styes for body text*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+      /*Header styles*/
+        header {
+            background-color: #1a53e4;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+         }
+
+          section {
+            padding: 30px;
+            text-align: center;
+         }
+
+          section h2 {
+            color: #1a53e4;
+         }
+
+          .skills span {
+            display: inline-block;
+            background-color: #1a53e4;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+
+        .projects .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .projects.card a { /* Selects <a> elements inside .card elements, which are inside .projects */
+            color: #1a53e4;/* Sets the link color to the same as the header */
+            text-decoration: none;/* Removes the underline from the link */
+        }
+
+        .projects .card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact form {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            background-color: #1a53e4;
+            color: white;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #163c99;
+        }
+
+        footer {
+            background-color: #1a53e4;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body><!--Body starts from here-->
+    <header>
+        <h1>Hi, I'm Eijkeyal Pakhrin</h1>
+        <p>A Frontend Developer and IT Enthusiast</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a passionate computing student with interests in IT, coding, and web development.
+                Currently pursuing a BSc in Computing at Islington College, affiliated with London Metropolitan University.
+            </p>
+            <img src="../Assets/Images/About us Images/IMG-df15e4dda9858c7b11260f867b5de6e4-V (1).jpg" alt="My Photo" style="width: 150px; height: 150px; border-radius: 50%;">
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Description of the project goes here.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section class="social-icons">
+            <h2>Follow Me</h2>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twiter.png" alt="Twitter"> </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="linkdin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="inst.jpg" alt="Instagram"></a>
+        </section>
+    </main>
+    <footer style="position: fixed; bottom: 0; width: 100%; background: #f0f0f0; text-align: center; padding: 1rem;">
+        <nav>
+            <a href="../Home/homepage.html" style="text-decoration: none; color: #333; padding: 0.5rem 1rem; background: #ddd; border-radius: 4px;">
+                Back To Home
+            </a>
+        </nav>
+    </footer>
+
+    <footer>
+        <p>&copy; 2025. All rights reserved in the name of Eijkeyal Pakhrin.</p>
+    </footer>
+</body>
+</html>

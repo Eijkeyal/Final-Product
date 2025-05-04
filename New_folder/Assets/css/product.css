@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+    background-color:white;
+    position: relative;/*taki logo muni na aayos*/
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.leftside a {/*for email */
+    color:rgb(2, 3, 3);
+    font-weight: bold;
+    font-size: 20px;
+}
+.leftside a:hover{
+    color:aqua;
+}/*email ends here */
+
+.rightside {/*for the location,sign up and help */
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+}
+.rightside button {
+    padding: 10px 15px;
+    background-color: rgb(243, 147, 23);
+    padding: 8px 15px;
+    color: rgb(6, 6, 6);
+    border:none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+.rightside button:hover {
+    background-color:aquamarine;
+}/*location,sign up and help ends here*/
+
+/*logo nav bar search favourite and cart starts here*/
+.middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:whitesmoke;
+    padding: 10px 20px;
+    font-size: 15px;
+    height: 80px;
+
+}
+.logo{
+    flex: 1;
+    display: flex;
+}
+.weblogo{
+    width: 80px;
+    height: auto;
+}
+.navlink{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navlink ul {
+    display: flex;
+    gap: 22px;
+    list-style-type: none;
+}
+.middle nav ul li a {
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.middle nav ul li a:hover{
+    color:aquamarine;
+}
+/*for search bar*/
+.rightnav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;   
+}
+.rightnav button{
+    padding: 10px 15px;
+    background-color: rgb(243, 147, 23);
+    padding: 8px 15px;
+    color: rgb(6, 6, 6);
+    border:none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.rightnav button:hover{
+    background-color:aquamarine;
+}
+.newarrivalimg{/*aaru image ko*/
+    display: flex;
+    flex-wrap: wrap;/*aarko line ma product joas bhanera*/
+    justify-content: space-around;
+    gap: 20px;
+
+}
+.newitem {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+   
+}
+.newitem img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;/*yeslei border round garcha*/
+
+}
+.price{
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    color:red;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+
+   
+}
+.footerone{
+    width: 30%;
+}
+.footerone h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.footerone ul{
+    list-style-type: none;
+}
+.footerone ul li{
+    margin: 10px;
+}
+.footerone ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.footerone ul li a:hover{
+    background-color: aquamarine;
+}
+
+.footerone button{
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: rgb(243, 147, 23);
+    padding: 8px 15px;
+    color: rgb(6, 6, 6);
+    border:none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    display: block;/*to stack the buttons*/
+}
+.footerone button:hover{
+    background-color: aquamarine;
+}

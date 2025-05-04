@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Your Store</title>
+  <style>
+     /* Navigation Styles */
+     .navlink {
+            font-family: 'Arial', sans-serif;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+        }
+        
+        .navlink ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .navlink a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .navlink a:hover {
+            background: #e9ecef;
+            color: #000;
+            transform: translateY(-2px);
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .navlink ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+        }
+    
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #f5f5f5;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* Container */
+    .post {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Poster */
+    .post img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Content */
+    .post-content {
+      padding: 20px;
+    }
+    .post-content .date {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .post-content h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    .post-content p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    /* “Why Us” Boxes */
+    .reasons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: space-between;
+    }
+    .reason {
+      flex: 1 1 45%;
+      background: #f9f9f9;
+      border-radius: 6px;
+      padding: 15px;
+      position: relative;
+      padding-left: 35px;
+    }
+    .reason h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .reason::before {
+      content: "✔";
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      color: #28a745;
+      font-size: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .reason { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="post">
+    <!-- Poster on top -->
+    <img src="../../Assets/Images/Blog Images/nike shoes for 1.jpg" alt="Summer Footwear Trends">
+
+    <!-- Content below -->
+    <div class="post-content">
+      <p class="date">April 30, 2025</p>
+      <h1>Summer Footwear Trends 2024</h1>
+      <p>At the heart of the footwear industry, we pride ourselves on offering the perfect blend of <strong>comfort, style, and durability</strong>. Our customers trust us because we prioritize their satisfaction every step of the way.</p>
+
+      <div class="reasons">
+        <div class="reason">
+          <h3>Reliable</h3>
+          <p>Count on us for quality products that exceed expectations.</p>
+        </div>
+        <div class="reason">
+          <h3>Trusted</h3>
+          <p>Backed by years of customer loyalty and glowing reviews.</p>
+        </div>
+        <div class="reason">
+          <h3>Easy to Contact</h3>
+          <p>We're always here to assist you with seamless communication.</p>
+        </div>
+        <div class="reason">
+          <h3>Transparency</h3>
+          <p>No hidden costs, no surprises—just honesty and clarity.</p>
+        </div>
+        <div class="reason">
+          <h3>Up-to-Date</h3>
+          <p>Stay ahead of the trends with our latest designs and innovations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="position: fixed; bottom: 0; width: 100%; background: #f0f0f0; text-align: center; padding: 1rem;">
+    <nav>
+        <a href="../../Blog/blog3.html" style="text-decoration: none; color: #333; padding: 0.5rem 1rem; background: #ddd; border-radius: 4px;">
+            Back To Home
+        </a>
+    </nav>
+</footer>
+</body>
+</html>
